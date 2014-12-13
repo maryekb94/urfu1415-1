@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Task 1: private card</title>
-	<link rel="stylesheet" href="style.css">
-    <script data-main="js/init" src="require.js" type="text/javascript"></script>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script src='http://code.jquery.com/jquery-compat-git.js'></script>
+  <script src='./js.js'></script>
+  <link rel="stylesheet" type="text/css" href="./css.css">
 </head>
 <body>
-	<div class="cardContents">&nbsp;</div>
-</body>
+ <div id="info">
+  <div id="strings">
+		<input type="text" class="input" value="фамилия"  hidden/>
+		 <p><div class="info empty" id="data5" >Зылева </div></p>
+		 <p><div class="info empty" id="data6" >Мария Евгеньевна </div></p>
+		 <p><div class="info empty" id="data7">3.10.1994 Магнитогорск </div></p>
+		<p><div class="info empty" id="data" >5.11.2014</div></p>
+		<p><div class="info empty" id="data1">ГИБДД 7701 </div></p>
+		<p><div class="info empty" id="data2">77 01 123456</div></p>
+		<p><div class="info empty" id="data3" > Магнитогорск</div></p>
+		<p><div class="info empty" id="data4" > B </div></p>
+		<div class="podpis" id="sign">Подпись</div>
+	</div>
+</div>		
+ 
+<div class="booth">
+   <video id="video" width="400" height="300" autoplay></video>
+   <a href="#" id="capture" class="booth-capture-button">Сфотографировать</a>
+   <canvas id="canvas" width="400" height="300"></canvas>
+     </div>
+     <img src="http://goo.gl/qgUfzX" id="photo" alt="Ваша фотография" class="photo"></img>
+	 </body>
 </html>
